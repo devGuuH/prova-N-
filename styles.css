@@ -1,0 +1,102 @@
+/* Esquema de Cores */
+:root {
+    --primary-color: #0033cc; /* Azul */
+    --secondary-color: #cc0000; /* Vermelho */
+    --background-color: #ffffff; /* Branco */
+}
+
+/* Estilo Geral */
+body {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Cabeçalho Fixo */
+header {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding-top: 100px; /* Para compensar o cabeçalho fixo */
+}
+
+/* Navegação */
+nav a {
+    color: var(--background-color);
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--secondary-color); /* Vermelho no hover */
+}
+
+/* Seção de Contato */
+section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section h2 {
+    color: var(--secondary-color); /* Vermelho para destaque */
+}
+
+/* Formulário */
+form {
+    background-color: var(--background-color);
+    padding: 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--primary-color);
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+}
+
+form button {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: var(--secondary-color); /* Efeito hover no botão */
+}
